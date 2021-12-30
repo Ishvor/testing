@@ -1,0 +1,66 @@
+Azure Application Gateway
+
+
+This service is a web traffic load balancer that is used to distribute traffic to web applications.
+
+The web applications can reside on Virtual Machines, Virtual Machine Scale sets or even on on-premise servers.
+
+The Application gateway is an OSI Layer 7 load balancer.
+
+Some of the features of the Azure Application Gateway Service
+
+Secure Sockets Layer (SSL/TLS) termination
+
+Here requests to the Application Gateway can be secure.
+
+And then the requests to the backend pool resources can go unencrypted.
+
+This can lift the burden of the backend pool for decrypting requests.
+
+The decryption of requests can be left to the Application gateway resource.
+
+
+
+Autoscaling
+
+Here the Application Gateway can scale based on demand.
+
+You can also distribute the deployment of the Application Gateway across multiple zones to ensure better availability of the Azure Application Gateway service
+
+
+
+Web Application Firewall
+
+This feature provides protection of your web applications against common exploits and attacks from the Internet
+
+Here your application could be protected against SQL injection and cross-site scripting attacks
+
+The Web Application Firewall uses a set of rules to protect your web applications. These rules are based on the Open Web Application  Security Project. These rules are automatically updated to ensure all the latest threats are included in the rules.
+
+You can also create your own custom policies for your Web Application Firewall
+
+
+
+Components of the Azure Application Gateway
+
+Frontend IP address – Users will hit the Application Gateway via the Frontend IP address.
+
+Listener – This is a logical entity that checks for incoming connection requests. There can be multiple listeners attached to an application gateway.
+
+There are 2 types of Listener configurations
+
+Basic – Here the listener listens to a single domain site
+
+Multi-site – Here the listeners maps to multiple domain sites.
+
+Routing Rules – This is used to route the traffic from the listener to the backend pool.
+
+There are 2 types of routing rules
+
+Basic – Here all requests are routed to backend pool directly.
+
+Path-based – Here requests are routed to the backend pool based on the URL in the request.
+
+Backend pools – These can be Network Interface cards , Virtual Machine scale sets , Public or Internal IP addresses , FQDN or backends such as App Service.
+
+Health Probes – This defines how the application gateway will monitor the health of the resources in the backend pool.
