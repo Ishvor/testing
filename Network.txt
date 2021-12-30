@@ -1,0 +1,25 @@
+Virtual Network 
+Hello
+Load Balancer - Public Load balance & Internal load balance 
+High Availablity & scalability
+suport TCP & UDP
+External & internal traffic
+Support inbound & Outbound
+
+
+Application Gateway - Can be used to handle web traffic and replace public load balancer. Not limited to VM it can be connection to web app services.
+Web traffic load balancer
+Web application firewall
+Redirection capability
+Session Affinity
+URL routing
+SSL termination
+
+
+CDN: content delivery network - Azure Content Delivery Network (CDN) lets you reduce load times, save bandwidth and speed responsiveness—whether you are developing or managing websites or mobile apps or encoding and distributing streaming media, gaming software, firmware updates or IoT endpoints.
+
+Connect two Vnet between different region / resource.
+- Vnet Peering
+-VPN Gateway (Most used to connect On-premise to Cloud)
+
+Network filtering can be done via Network security Groups NSG & Application security group ASG
